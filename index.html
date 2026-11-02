@@ -13,5 +13,70 @@
 
         <h2>Sequenziali</h2>
         <h3>yehhqduewbhdbewdhebdhebdbwh hewdbhed hewd h</h3>
+        <h3 >
+	I latch integrati</h3>
+	<p >
+	Sono disponibili come circuiti integrati sia <strong>latch</strong>
+	<span class="negato">R</span> <span class="negato">S</span> che <strong>
+	latch R S</strong>. </p>
+	<p >
+	Spesso sono presenti ingressi aggiuntivi:</p>
+	<ul>
+		<li><em>Clear</em> (CL) che azzera Q indipendentemente da tutti gli 
+		altri ingressi</li>
+		<li><em>Preset</em> (PR) o Reset che pone Q a uno, indipendentemente da tutti 
+		gli altri ingressi</li>
+		<li><em>Enable</em> (E oppure En) che permette il funzionamento del 
+		latch solo se attivo, Se l&#39;enable non è attivo, le uscite semplicemente 
+		non cambiano, memorizzando il valore precedente.</li>
+	</ul>
+	<p>In genere gli ingressi PR e CL sono utilizzati per impostare il valore 
+	iniziale memorizzato nel latch. Spesso sono <em>attivi bassi</em>.</p>
+	<p><a name="SRlatch"></a>Di seguito la tabella di verità di un latch SR con ingresso di Enable 
+	attivo alto:</p>
+	<table class="truetable"> 
+		<tr class="truetable-top">
+			<td>S</td>
+			<td>R</td>
+			<td>En</td>
+			<td>Q</td>
+			<td><span class="negato">Q</span></td>
+		</tr>
+		<tr>
+			<td class="truetable-in">X</td>
+			<td class="truetable-in">X</td>
+			<td class="truetable-in">L</td>
+			<td class="truetable-out">Q<sub>n-1</sub></td>
+			<td class="truetable-out"><span class="negato">Q</span><sub>n-1</sub></td>
+		</tr>
+		<tr>
+			<td class="truetable-in">1</td>
+			<td class="truetable-in">0</td>
+			<td class="truetable-in">H</td>
+			<td class="truetable-out">1</td>
+			<td class="truetable-out">0</td>
+		</tr>
+		<tr>
+			<td class="truetable-in">0</td>
+			<td class="truetable-in">1</td>
+			<td class="truetable-in">H</td>
+			<td class="truetable-out">0</td>
+			<td class="truetable-out">1</td>
+		</tr>
+		<tr>
+			<td class="truetable-in">0</td>
+			<td class="truetable-in">0</td>
+			<td class="truetable-in">H</td>
+			<td class="truetable-out">Q<sub>n-1</sub></td>
+			<td class="truetable-out"><span class="negato">Q</span><sub>n-1</sub></td>
+		</tr>
+		<tr>
+			<td class="truetable-in">1</td>
+			<td class="truetable-in">1</td>
+			<td class="truetable-in">H</td>
+			<td class="truetable-out">0</td>
+			<td class="truetable-out">0</td>
+		</tr>
+	</table>
     </body>
 </html>
